@@ -150,7 +150,7 @@
         // Validate
         fileInput.addEventListener("change", () => {
 
-            if (!fileInput.files.length === 0) {
+            if (fileInput.files.length === 0) {
                 show.className = "show error";
                 show.textContent = "No file selected";
                 return;
@@ -171,5 +171,6 @@
     </script>
 
 </body>
+
 
 </html>
